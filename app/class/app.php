@@ -274,15 +274,7 @@ function createImg($oldImg,$newImg,$imgInfo,$maxWidth=200,$maxHeight=200,$cut=fa
 		if ( $imgInfo[0] < $imgInfo[1] )
 			$maxWidth = ($maxHeight / $imgInfo[1]) * $imgInfo[0];
 		else
-			$maxHeight = ($maxWidth / $imgInfo[0]) * $imgInfo[1];
-	}
-
-	$cw = 0;
-	$ch = 0;
-	if($cut){
-
-
-  if ($maxWidth < $_n_w) { //如果新高度小于新容器高度
+			$maxHeight = ($maxWidth / $imgInfo[0高度小于新容器高度
    $r = $_n_w / $maxWidth; //按长度求出等比例因子
    $maxWidth *= $r; //扩展填充后的长度
    $maxHeight *= $r; //扩展填充后的高度
